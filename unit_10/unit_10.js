@@ -132,16 +132,15 @@ document.querySelector('.b-7').onclick = f7;
 // Вывод - по нажатию кнопки b-8
 // Вывод в out-8
 
-let ar8 = [1,2,3,4,5,6,7,8,9,10];
+let ar8 = [];
 
 function f8() {
     let out = '';
     console.log(ar8);
-
+    ar8[3] = 3.14;
+    ar8[4] = 17;
+    ar8[6] = 5;
     for (let i = 0; i < ar8.length; i++) {
-        ar8[3] = 3.14;
-        ar8[4] = 17;
-        ar8[6] = 5;
         out += ar8[i] + '-';
     }
     document.querySelector('.out-8').innerHTML = out; 
@@ -413,10 +412,10 @@ document.querySelector('.b-17').onclick = f17;
 // Вывод в out-18
 
 let ar18 = [15, 24, 13, 78, 21, 4, 45, 67];
-let max = ar18[0];
+
 
 function f18() {
-    // out = '';
+    let max = ar18[0];
     console.log(ar18);
     for (let i = 0; i < ar18.length; i++) {
         if (ar18[i] > max) {
@@ -437,9 +436,10 @@ document.querySelector('.b-18').onclick = f18;
 // Вывод в out-19
 
 let ar19 = [15, 424, 313, 78, 241, 4, 45, 67];
-let min = ar19[0];
+
 
 function f19() {
+    let min = ar19[0];
     console.log(ar19);
     for (let i = 0; i < ar19.length; i++) {
         if (ar19[i] < min) {
